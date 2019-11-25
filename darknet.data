@@ -1,0 +1,6 @@
+classes = 1
+train  = /home/rishabh/PycharmProjects/Snowman_detection/snowman_train.txt
+valid  = /home/rishabh/PycharmProjects/Snowman_detection/snowman_test.txt
+names = /home/rishabh/PycharmProjects/Snowman_detection/classes.names
+backup = /home/rishabh/PycharmProjects/Snowman_detection/weights/
+
