@@ -81,7 +81,7 @@ Now that we know what all different components are needed for training, let’s 
 Make sure you give the correct paths to darknet.data and darknet-yolov3.cfg files in your system. Let’s also save the training log to a file called train.log in your dataset directory so that we can progress the loss as the training goes on.
 
 A useful way to monitor the loss while training is using the grep command on the train.log file we can do that by opening another terminal and using the command:
-'grep "avg" /path/to/object/train.log'
+`grep "avg" /path/to/object/train.log`
 It shows the batch number, loss in the current batch, average loss till the current batch, current learning rate, time taken for the batch and images used till current batch.
 
 # When do we stop the training?
