@@ -1,0 +1,3 @@
+/home/rishabh/PycharmProjects/detect_carton/downloads/images/3.81YtCetvAzL._SL1500_.jpg
+/home/rishabh/PycharmProjects/detect_carton/downloads/images/6.carton-box-500x500.jpg
+/home/rishabh/PycharmProjects/detect_carton/downloads/images/23.660719867.g_400-w_g.jpg
