@@ -4,9 +4,9 @@
 
 1) Darknet, it is an open source neural network framework supports CPU and GPU computation
 2) Any python IDE. In this tutorial, we will use Pycharm and my OS is UBUNTU 16.04.
-3) LabelImg, it is an application to annotate the objects in images. It is included in the source code too.
+3) LabelImg, it is an application to annotate the objects in images. You can get the code from `https://github.com/tzutalin/labelImg`
 4) Source Code, you can get it from `https://github.com/rishabhoswal/imageprocessing/`
-5) Install the requirements from the requirement.txt which is the code itself.
+5) Install the requirements from the requirement.txt
 
 # Dataset Collection and Annotating
 
