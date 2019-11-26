@@ -5,7 +5,7 @@
 1) Darknet, it is an open source neural network framework supports CPU and GPU computation
 2) Any python IDE. In this tutorial, we will use Pycharm and my OS is UBUNTU 16.04.
 3) LabelImg, it is an application to annotate the objects in images. It is included in the source code too.
-4) Source Code, you can get it from https://github.com/rishabhoswal/imageprocessing/
+4) Source Code, you can get it from `https://github.com/rishabhoswal/imageprocessing/`
 5) Install the requirements from the requirement.txt which is the code itself.
 
 # Dataset Collection and Annotating
@@ -34,18 +34,18 @@ The next step is to annotate the dataset using LabelImg to define the location (
 
 Let’s first download and build it on your system.
 
-'cd ~'
-'git clone https://github.com/pjreddie/darknet'
-'cd darknet'
-'make'
+`cd ~`
+`git clone https://github.com/pjreddie/darknet`
+`cd darknet`
+`make`
 
 
 # Download Pre-trained model
 
 The main idea behind making custom object detection or even custom classification model is Transfer Learning which means reusing an efficient pre-trained model such as VGG, Inception, or Resnet as a starting point in another task. For training YOLOv3 we use convolutional weights that are pre-trained on Imagenet. We use weights from the darknet53 model.
 
-'cd ~/darknet'
-'wget https://pjreddie.com/media/files/darknet53.conv.74 -O ~/darknet/darknet53.conv.74'
+`cd ~/darknet`
+`wget https://pjreddie.com/media/files/darknet53.conv.74 -O ~/darknet/darknet53.conv.74`
 
 
 # Preparing training configuration files
@@ -75,8 +75,8 @@ It contains :
 # Training YOLOv3
 
 Now that we know what all different components are needed for training, let’s start the training process. Go to the darknet directory and start it using the command as following:
-'cd ~/darknet'
-'./darknet detector train /path/to/object/darknet.data /path/to/object/darknet-yolov3.cfg ./darknet53.conv.74 > /path/to/object/train.log'
+`cd ~/darknet`
+`./darknet detector train /path/to/object/darknet.data /path/to/object/darknet-yolov3.cfg ./darknet53.conv.74 > /path/to/object/train.log`
 
 Make sure you give the correct paths to darknet.data and darknet-yolov3.cfg files in your system. Let’s also save the training log to a file called train.log in your dataset directory so that we can progress the loss as the training goes on.
 
@@ -88,8 +88,8 @@ It shows the batch number, loss in the current batch, average loss till the curr
 
 As the training goes on, the log file contains the loss in each batch. One could argue to stop training after the loss has reached below some threshold. We generate the plot using the following script:
 
-'python3 plotTrainLoss.py /full/path/to/train.log'
+`python3 plotTrainLoss.py /full/path/to/train.log`
 
 # Testing the model
 You will need to give the correct path to the modelConfiguration and modelWeights files in object_detection_yolo.py and test the model:
-'python3 object_detection_yolo.py --image=objectImage.jpg'
+`python3 object_detection_yolo.py --image=objectImage.jpg`
